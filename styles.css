@@ -1,0 +1,110 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #f0f0f0, #d6ba84);
+    color: #333;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.startScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.grid-row {
+    display: flex;
+}
+
+.grid-box {
+    width: 60px;
+    height: 60px;
+    background-color: #f0f0f0;
+    margin: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.grid-box:hover {
+    background-color: #ccc;
+}
+
+.filled.player1 {
+    background-color: rgb(46, 197, 197); /* Player 1 color */
+}
+
+.filled.player2 {
+    background-color: rgb(165, 73, 165); /* Player 2 color */
+}
+
+.hide {
+    display: none;
+}
+
+#playerTurn {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4caf50;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#message span {
+    color: #d32f2f;
+    font-size: 2.5rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.5); }
+    to { opacity: 1; transform: scale(1); }
+}
